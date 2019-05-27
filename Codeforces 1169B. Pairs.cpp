@@ -41,9 +41,7 @@ int main() {
     for(ll i = 0; i < m; i++){
         sc2(first[i], sec[i]);
     }
-
-    if(m == 1) return cout << "YES" << endl,0;
-
+    
     for(ll i = 1; i < m; i++){
         if(first[i] == first[0] || first[i] == sec[0] || sec[i] == first[0] ||sec[i] == sec[0]){
             continue;
