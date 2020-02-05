@@ -1,0 +1,25 @@
+infix : (100-5)*(((60/3)+(((-13)+40)/3))-28)
+
+infix to prefix : * - 100 5 - + / 60 3 / + - 13 40 3 28
+
+infix to postfix : 100 5 - 60 3 / - 13 40 + 3 / + 28 - *
+
+now we calculate infix = 95. 
+
+so now we justify prefix & postfix = 95.
+
+prefix :   * - 100 5 - + / 60 3 / + (- 13) 40 3 28
+           * 95 - + 20 / 27 3 28
+           * 95 - + 20 9 28
+           * 95 - 29 28
+           * 95 1
+           = 95
+
+postfix : 100 5 - 60 3 / (- 13) 40 + 3 / + 28 - *
+          95 20 27 3 / + 28 - *
+          95 20 9 + 28 - *
+          95 29 28 - *
+          95 1 *
+          = 95
+
+now we see infix = prefix = postfix = 95 (proved)
